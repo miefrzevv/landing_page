@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'RF';
+    src: url('/assets/font/RFDewiExpanded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+header {
+    height: 677px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/bg1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-inner nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.header-inner-first,
+.header-inner-second,
+.header-inner-third {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-inner-second {
+    text-align: center;
+}
+
+.header-inner-first span {
+    font-family: RF Dewi Expanded;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.header-inner-first a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+.header-inner-second-first {
+    font-family: RF Dewi Expanded;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+}
+
+.header-inner-second {
+    align-items: center;
+}
+
+.header-inner-second-second {
+    font-family: RF;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.header-inner-third span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+.header-inner-third a {
+    font-family: RF Dewi Expanded;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16.8px;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-inner {
+    margin-top: 100px;
+}
+
+.hero-inner h1 {
+    font-family: RF Dewi Expanded;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 72px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-inner-button {
+    margin-top: 45px;
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19.2px;
+    text-align: left;
+    padding: 23px 35px;
+    background: rgba(244, 223, 116, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+main {
+    margin-top: 120px;
+}
+
+.main-text-title {
+    max-width: 894px;
+    font-family: RF Dewi Expanded;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 52.8px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-text p {
+    margin: 0 auto;
+    margin-top: 45px;
+    max-width: 738px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.cards-container {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    margin-bottom: 110px;
+}
+
+
+.card img {
+    display: block;
+    width: 351px;
+    height: 351px;
+}
+
+.card a {
+    display: flex;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 15px;
+}
+
+.card p {
+    font-family: RF;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.card-price {
+    padding-left: 10px;
+    font-family: RF;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: right;
+}
+
+
+
+/* VIDEO */
+.video {
+    margin-bottom: 50px;
+}
+
+video {
+    border-radius: 15px;
+    width: 1124px;
+    height: 350px;
+}
