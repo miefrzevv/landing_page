@@ -8,41 +8,41 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
         <div class="container">
-          <div class="header-inner">
-            <nav>
-              <div class="header-inner-first">
-                <span>+7 925 343 16 96</span>
-                <a href="#">Перезвоните мне</a>
+          <div class="header__inner">
+            <nav class="header__nav">
+              <div class="header__contact-info">
+                <span class="header__phone">+7 925 343 16 96</span>
+                <a href="#" class="header__callback-link">Перезвоните мне</a>
               </div>
-              <div class="header-inner-second">
-                <span class="header-inner-second-first">FAMFACTORY</span>
-                <span class="header-inner-second-second">Швейная фабрика</span>
+              <div class="header__brand">
+                <span class="header__brand-name">FAMFACTORY</span>
+                <span class="header__brand-description">Швейная фабрика</span>
               </div>
-              <div class="header-inner-third">
-                <a href="#">MAIL@FAMFACTORY.RU</a>
-                <span>Наша почта</span>
+              <div class="header__email">
+                <a href="#" class="header__email-link">MAIL@FAMFACTORY.RU</a>
+                <span class="header__email-text">Наша почта</span>
               </div>
             </nav>
           </div>
 
-          <div class="hero-inner">
-            <h1 class="hero-inner-title">
+          <div class="hero">
+            <h1 class="hero__title">
               Сделано<br />
               в Санкт-Петербурге
             </h1>
-            <button class="hero-inner-button">Отправить запрос</button>
+            <button class="hero__button">Отправить запрос</button>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <div class="container">
-        <div class="main-text">
-          <h2 class="main-text-title">
+        <div class="main__text text">
+          <h2 class="main__title title">
             Современный<br />
             мерчендайз для бизнеса
           </h2>
@@ -53,38 +53,38 @@
             воплотить конкретные задачи на любом из этапов производства.
           </p>
         </div>
-        <section class="cards-container">
-          <div class="card">
+        <section class="product-cards">
+          <div class="product-card">
             <img src="/assets/img/card1.png" alt="card" />
             <a href="#">
               <p>Худи <sup class="card-price">от 1650 ₽</sup></p>
             </a>
           </div>
-          <div class="card">
+          <div class="product-card">
             <img src="/assets/img/card2.png" alt="card" />
             <a href="#">
               <p>Футболки <sup class="card-price">от 510 ₽</sup></p>
             </a>
           </div>
-          <div class="card">
+          <div class="product-card">
             <img src="/assets/img/card3.png" alt="card" />
             <a href="#">
               <p>Свитшоты <sup class="card-price">от 890 ₽</sup></p>
             </a>
           </div>
-          <div class="card">
+          <div class="product-card">
             <img src="/assets/img/card4.png" alt="card" />
             <a href="#">
               <p>Штаны <sup class="card-price">от 1230 ₽</sup></p>
             </a>
           </div>
-          <div class="card">
+          <div class="product-card">
             <img src="/assets/img/card5.png" alt="card" />
             <a href="#">
               <p>Шопперы <sup class="card-price">от 330 ₽</sup></p>
             </a>
           </div>
-          <div class="card">
+          <div class="product-card">
             <img src="/assets/img/card6.png" alt="card" />
             <a href="#">
               <p>Кепки <sup class="card-price">от 400 ₽</sup></p>
@@ -99,6 +99,206 @@
         <video controls poster="assets/img/videoposter.png">
           <source src="assets/video/video.mp4" type="video/mp4" />
         </video>
+      </div>
+    </section>
+
+    <section class="production">
+      <div class="container">
+        <div class="production__text text">
+          <h2 class="production__title title">
+            Производство одежды<br />
+            для компаний, брендов, артистов
+          </h2>
+          <p>
+            Наша команда по разработке и производству одежды может реализовать
+            проекты любой сложности, независимо от их масштаба. Мы можем взять
+            на себя всю работу под ключ, или решить конкретные задачи на любом
+            из этапов производства.
+          </p>
+        </div>
+        <div class="advantages">
+          <div class="advantage">
+            <img
+              src="/assets/img/production/1.png"
+              alt=""
+              class="advantage-img"
+            />
+            <h3 class="advantage-title">
+              Разработка лекал и<br />
+              дизайна
+            </h3>
+            <p class="advantage-text">
+              Поможем создать уникальные лекала для вашей одежды или
+              адаптировать уже имеющиеся. Разработаем индивидуальный дизайн
+              ваших товаров
+            </p>
+          </div>
+          <div class="advantage">
+            <img
+              src="/assets/img/production/2.png"
+              alt=""
+              class="advantage-img"
+            />
+            <h3 class="advantage-title">
+              Пошив одежды<br />
+              на заказ
+            </h3>
+            <p class="advantage-text">
+              Пошив трикотажных изделий любой сложности и в любых объемах, как
+              по вашим образцам, так и по нашим базовым лекалам
+            </p>
+          </div>
+          <div class="advantage">
+            <img
+              src="/assets/img/production/3.png"
+              alt=""
+              class="advantage-img"
+            />
+            <h3 class="advantage-title">
+              Бренд одежды<br />
+              под ключ
+            </h3>
+            <p class="advantage-text">
+              Поможем разработать линейку одежды для вашего бренда, от пошива до
+              реализации.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="methods">
+      <div class="container">
+        <div class="methods__text text">
+          <h2 class="methods__title title">
+            Способы нанесения принтов и вышивка
+          </h2>
+        </div>
+        <div class="methods__items">
+          <div class="item__container">
+            <img src="/assets/img/methods/1.png" alt="" class="item-img" />
+            <h3 class="advantage-title">Шелкография</h3>
+            <p class="advantage-text">
+              Трафаретная печать подходит для нанесения почти на любых изделиях:
+              футболках, толстовках, свитшотах и т.д. Принты, сделанные данным
+              способом имеют высокую износостойкость, не требуют особого ухода и
+              прослужат довольно долго.
+            </p>
+          </div>
+          <div class="item__container">
+            <img src="/assets/img/methods/2.png" alt="" class="item-img" />
+            <h3 class="advantage-title">Вышивка на одежде</h3>
+            <p class="advantage-text">
+              Один из самых интересных способов нанесения изображения на одежду.
+              Вышивка долговечна, без проблем переносит механические
+              воздействия. Данный вид нанесения выглядит наиболее эффектно и
+              прослужит дольше всего.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="realisation">
+      <div class="container">
+        <div class="realisation__inner">
+          <h3 class="realisation__title">
+            Если у вас есть свои товары,<br />
+            мы можем вам помочь реализовать их.
+          </h3>
+          <p class="realisation__text">
+            Разместим Ваши товары на сайте vsrap.com и в офлайн-магазинах
+            «VSRAP». <br />Осуществим обработку заказов и их отправку. Каждое
+            предложение мы рассматриваем индивидуально.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scheme">
+      <div class="container">
+        <div class="scheme__inner">
+          <div class="scheme__title title">Схема работы с нами</div>
+          <p class="scheme__text text">
+            К каждому проекту мы подходим индивидуально. Свяжитесь с нами и мы
+            поможем реализовать ваши идеи.
+          </p>
+          <div class="scheme__items">
+            <div class="scheme__item">
+              <div class="item-icon">
+                <img src="/assets/img/scheme/person_icon.png" alt="" />
+              </div>
+              <div class="item-description">
+                <p>
+                  Отправляете<br />
+                  заявку или звоните <br />+7 (911) 109-97-07
+                </p>
+              </div>
+            </div>
+            <div class="scheme__item">
+              <div class="item-icon">
+                <img src="/assets/img/scheme/tshirt_icon.png" alt="" />
+              </div>
+              <div class="item-description">
+                <p>
+                  Разрабатываем<br />
+                  лекала и шьём<br />образец
+                </p>
+              </div>
+            </div>
+            <div class="scheme__item">
+              <div class="item-icon">
+                <img src="/assets/img/scheme/sewing_icon.png" alt="" />
+              </div>
+              <div class="item-description">
+                <p>
+                  Шьём тираж и<br />
+                  наносим принт или<br />
+                  вышивку
+                </p>
+              </div>
+            </div>
+            <div class="scheme__item">
+              <div class="item-icon">
+                <img src="/assets/img/scheme/car_icon.png" alt="" />
+              </div>
+              <div class="item-description">
+                <p>
+                  Упаковываем<br />
+                  и отгружаем<br />
+                  партию
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="producing">
+      <div class="container">
+        <div class="producing__inner">
+          <div class="producing__text text">
+            <h2 class="producing__title">
+              Все вещи мы шьём на собственном производстве в Санкт-Петербурге по
+              собственному дизайну и крою
+            </h2>
+            <p>
+              А наши коллекции сделанные совместно с топовыми блогерами и
+              артистами продаём в онлайн и через собственные розничные магазины
+              в Питере и Москве.
+            </p>
+          </div>
+
+          <div class="producing__gallery">
+            <img src="assets/img/producing/1.png" alt="" />
+            <img src="assets/img/producing/2.png" alt="" />
+            <img src="assets/img/producing/3.png" alt="" />
+            <img src="assets/img/producing/4.png" alt="" />
+            <img src="assets/img/producing/5.png" alt="" />
+            <img src="assets/img/producing/6.png" alt="" />
+          </div>
+        </div>
       </div>
     </section>
   </body>

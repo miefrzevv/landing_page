@@ -31,11 +31,11 @@ body {
 
 
 /* HEADER */
-header {
+.header {
     height: 677px;
 }
 
-.wrapper {
+.header__wrapper {
     width: 100%;
     height: 100%;
     background-image: url("/assets/img/bg1.png");
@@ -44,26 +44,29 @@ header {
     background-repeat: no-repeat;
 }
 
-.header-inner nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header__inner nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 30px 0;
     color: #fff;
 }
 
-.header-inner-first,
-.header-inner-second,
-.header-inner-third {
+.header__contact-info,
+.header__brand,
+.header__email {
     display: flex;
     flex-direction: column;
 }
 
-.header-inner-second {
+.header__email {
+    justify-self: end;
+}
+
+.header__brand {
     text-align: center;
 }
 
-.header-inner-first span {
+.header__contact-info span {
     font-family: RF Dewi Expanded;
     font-size: 14px;
     font-weight: 800;
@@ -71,7 +74,7 @@ header {
     text-align: left;
 }
 
-.header-inner-first a {
+.header__contact-info a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
@@ -80,7 +83,7 @@ header {
     text-align: left;
 }
 
-.header-inner-second-first {
+.header__brand {
     font-family: RF Dewi Expanded;
     font-size: 25px;
     font-weight: 800;
@@ -88,11 +91,11 @@ header {
     text-align: center;
 }
 
-.header-inner-second {
+.header__brand {
     align-items: center;
 }
 
-.header-inner-second-second {
+.header__brand-description {
     font-family: RF;
     font-weight: 100;
     font-size: 16px;
@@ -101,7 +104,7 @@ header {
     text-transform: uppercase;
 }
 
-.header-inner-third span {
+.header__email span {
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
@@ -109,7 +112,7 @@ header {
     text-align: left;
 }
 
-.header-inner-third a {
+.header__email a {
     font-family: RF Dewi Expanded;
     font-size: 14px;
     font-weight: 800;
@@ -119,11 +122,11 @@ header {
     color: #fff;
 }
 
-.hero-inner {
+.hero {
     margin-top: 100px;
 }
 
-.hero-inner h1 {
+.hero h1 {
     font-family: RF Dewi Expanded;
     font-size: 60px;
     font-weight: 800;
@@ -132,7 +135,7 @@ header {
     color: #fff;
 }
 
-.hero-inner-button {
+.hero__button {
     margin-top: 45px;
     font-family: RF Dewi Expanded;
     font-size: 16px;
@@ -148,11 +151,11 @@ header {
 
 
 /* MAIN */
-main {
+.main {
     margin-top: 120px;
 }
 
-.main-text-title {
+.title {
     max-width: 894px;
     font-family: RF Dewi Expanded;
     font-size: 48px;
@@ -162,7 +165,7 @@ main {
     margin: 0 auto;
 }
 
-.main-text p {
+.text p {
     margin: 0 auto;
     margin-top: 45px;
     max-width: 738px;
@@ -173,7 +176,7 @@ main {
     text-align: center;
 }
 
-.cards-container {
+.product-cards {
     margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
@@ -183,27 +186,27 @@ main {
 }
 
 
-.card img {
+.product-card img {
     display: block;
     width: 351px;
     height: 351px;
 }
 
-.card a {
+.product-card a {
     display: flex;
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
     padding-top: 15px;
 }
 
-.card p {
+.product-card p {
     font-family: RF;
     font-size: 24px;
     line-height: 28.8px;
     text-align: left;
 }
 
-.card-price {
+.product-card {
     padding-left: 10px;
     font-family: RF;
     font-size: 18px;
@@ -215,11 +218,204 @@ main {
 
 /* VIDEO */
 .video {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.video::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(238, 238, 238, 1);
+    z-index: -1;
 }
 
 video {
     border-radius: 15px;
     width: 1124px;
+    height: 350px;
+}
+
+
+
+/* PRODUCTION */
+.production {
+    padding-top: 130px;
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.production__text {
+    margin-bottom: 75px;
+}
+
+.advantages {
+    display: flex;
+    gap: 36px;
+    padding-bottom: 130px;
+}
+
+.advantage {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.advantage-title {
+    font-family: RF Dewi Expanded;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.advantage-text {
+    margin-top: 25px;
+    height: 96px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.advantage-img {
+    display: block;
+    width: 351px;
+    height: 211px;
+}
+
+
+/* METHODS */
+.methods {
+    margin-bottom: 135px;
+}
+
+.methods__text {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.methods__items {
+    display: flex;
+    gap: 36px;
+}
+
+
+/* REALISATION */
+.realisation__inner {
+    width: 100%;
+    height: 350px;
+    background-image: url("/assets/img/bg_dark.png");
+}
+
+.realisation__title {
+    font-family: RF Dewi Expanded;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28.8px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    padding-top: 96px;
+}
+
+.realisation__text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    width: 738px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.realisation {
+    position: relative;
+}
+
+.realisation::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(25, 25, 25, 1);
+    z-index: -1;
+}
+
+
+/* SCHEME */
+.scheme {
+    background-color: rgba(25, 25, 25, 1);
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 165px;
+}
+
+.scheme__title {
+    margin-bottom: 36px;
+}
+
+.scheme__text {
+    width: 738px;
+    margin: 0 auto;
+}
+
+.scheme__items {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.item-description {
+    padding-top: 30px;
+}
+
+.item-description p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/* PRODUCING */
+
+.producing {
+    margin-top: 125px;
+}
+
+.producing__title {
+    font-family: RF Dewi Expanded;
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 52.8px;
+    text-align: center;
+}
+
+.producing__text p {
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+.producing__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.producing__gallery img {
+    width: 350px;
     height: 350px;
 }
